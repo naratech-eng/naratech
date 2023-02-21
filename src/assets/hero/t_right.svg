@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 530.00 447.42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: url(#radial-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="195.45" y1="139.19" x2="597.97" y2="637.3" gradientTransform="translate(0 553.84) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b0d4ff"/>
+      <stop offset=".27" stop-color="#b0d4ff" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#b0d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="218.58" cy="652.09" fx="218.58" fy="652.09" r="1" gradientTransform="translate(-221283.6 -60610.69) rotate(90) scale(278.41 -339.87)" gradientUnits="userSpaceOnUse">
+      <stop offset=".2" stop-color="#b0d0ff"/>
+      <stop offset="1" stop-color="#b0d0ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="M.56,.5C15.67,130.85,153.12,65.35,201.46,244.66c46.22,177.16,174.22,116.87,271.14,209.07,96.92,92.2,157.96,77.79,157.96,77.79V.5H.56Z"/>
+      <path class="cls-2" d="M.56,.5C15.67,130.85,153.12,65.35,201.46,244.66c46.22,177.16,174.22,116.87,271.14,209.07,96.92,92.2,157.96,77.79,157.96,77.79V.5H.56Z"/>
+    </g>
+  </g>
+</svg>

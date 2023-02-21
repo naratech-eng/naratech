@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Header from './components/header';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -24,7 +24,7 @@ const App = () => {
   
 
   return (
-    <div className=''>
+    <div className=' font-base mx-auto box-border'>
       <RouterProvider router={router}/>
     
     </div>
