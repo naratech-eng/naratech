@@ -6,10 +6,33 @@
 
 body {
   margin: 0;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
+  min-height: 100vh;
 }
 
-code {
+/* * {
+  font-family:"Poppins";
+} */
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+.navbar-container{
+  @apply  flex space-x-2 justify-between items-center py-4 my-4 sm:mx-[5%] xl:mx-[10%] 2xl:mx-[15%] 3xl:mx-[22%];
 }
+
+/* .hero-section{ */
+  /* @apply bg-[url('./assets/hero/bg_hero.svg'),url('./assets/hero/Asset2.svg')] bg-no-repeat bg-[bottom,right-top] -mt-[100px] h-[900px] ; */
+  /* background-image: url('./assets/hero/bg_hero.svg'),url('./assets/hero/Asset2.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position:bottom, top right;
+  background-size: cover;
+  width: 100% ;
+  margin-top: -100px;
+  height: 800px; */
+
+
+/* } */
