@@ -9,7 +9,9 @@ body {
   /* font-family: "Poppins"; */
   min-height: 100vh;
 }
-
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 /* * {
   font-family:"Poppins";
 } */
@@ -24,7 +26,10 @@ body {
   @apply  flex space-x-2 justify-between items-center py-4 my-4 sm:mx-[5%] xl:mx-[10%] 2xl:mx-[15%] 3xl:mx-[22%];
 }
 
-/* .hero-section{ */
+.hero-section{
+
+  /* @apply before:absolute before:h-24 before:bg-red-500 before:-bottom-[7%] before:right-0 before:left-0
+after:absolute after:h-24 after:bg-red-500 after:-bottom-[7%] after:right-0 after:left-0 */
   /* @apply bg-[url('./assets/hero/bg_hero.svg'),url('./assets/hero/Asset2.svg')] bg-no-repeat bg-[bottom,right-top] -mt-[100px] h-[900px] ; */
   /* background-image: url('./assets/hero/bg_hero.svg'),url('./assets/hero/Asset2.svg');
   background-repeat: no-repeat, no-repeat;
@@ -33,6 +38,91 @@ body {
   width: 100% ;
   margin-top: -100px;
   height: 800px; */
+}
+
+.line{
+  @apply absolute w-6 h-[0.125rem] transition-all rotate-0 border
+}
 
 
-/* } */
+.y-sect::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/home/why_bg.svg');
+  background-size: contain;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+}
+
+.deals-section{
+  background-image: url('./assets/home/supriced_girl.svg'),linear-gradient(to left, rgb(182, 213, 249), rgba(0,0,0,0%));
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  width: 100%;
+  /* bg-[url('./assets/home/supriced_girl.svg')] bg-no-repeat bg-right-bottom bg-contain
+       bg-gradient-to-r from-[#B6D5F9] to-transparent */
+}
+
+
+.contact{
+  @apply after:absolute after:h-36 after:right-0 after:left-0 after:-bottom-[20px] 
+  after:skew-y-3 after:bg-gradient-to-r after:from-[#b6d5f971] after:to-[#00000000] after:-z-10
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(170, 203, 225, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(170, 203, 225, 0.44);
+  transition: transform 0.3s ease;
+}
+.cards:hover {
+  transform: scale(1.2);
+}
+.card__bg {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    center / cover no-repeat;
+  background-image: url('./assets/home/supriced_girl.svg');
+  filter: blur(10px);
+  z-index: -1;
+  background-position: center;
+}
+
+.card__content {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__description {
+  margin-bottom: 0;
+}
