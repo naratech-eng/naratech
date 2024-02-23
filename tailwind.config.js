@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         herox: `url('/src/assets/hero/bg_hero.svg'),url('/src/assets/hero/Asset2.svg'),url('/src/assets/hero/WAVE.svg')`,
+        
       },
       backgroundPosition:{
         herox: " bottom, right top, left -20px bottom 30%",

@@ -1,13 +1,12 @@
 import React from 'react'
-import topright from '../assets/hero/Asset2.svg';
-// import bottom from '../assets/hero/bg_hero.svg';
+
 import main_hero from '../assets/hero/hero_main.svg';
 
 import '../index.css';
 const Hero = () => {
   return (
     <>
-      <div className="hero-section bg-blend-overlay bg-herox bg-no-repeat h-[750px] 3xl:h-[900px] -mt-[8rem] flex flex-col">
+      <div className="hero-section bg-blend-lighten bg-herox bg-no-repeat h-[750px] 3xl:h-[900px] -mt-[8rem] flex flex-col  ">
         <div className="hero-content flex flex-wrap flex-row justify-between items-start mx-auto container mt-[12rem] relative">
           <div className=" prose z-10 ">
             <h1 className="text-6xl max-w-2xl ">
